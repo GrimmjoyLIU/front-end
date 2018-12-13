@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./boot+jq/bootstrap.min.css">
+    <style>
+        .inside{
+            height: 300px;
+            overflow-y: scroll; /*设置滚动效果*/
+            margin-top: -1px;
+
+        }
+        .outside{
+            width: 1500px;
+
+        }
+
+        .outside::after {/*设置最外层div的底部边界*/
+            content: "";
+            display: block;
+            height: 0px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            top: -1px;
+        }
+        .outside table{
+            table-layout: fixed;/*固定表格布局*/
+            margin-bottom: 0px;/*不设置margin-bottom的话两个表格中间会有间隔*/
+
+        }
+
+        .gutter{
+            width: 17px;/*表头空出滚动条的宽度*/
+        }
+    </style>
+</head>
+<body style="padding: 10px">
+    <div class="outside">
+        <table class="table table-bordered" >
+
+                <tr >
+                    <th> Game ID </th>
+                    <th> Status </th>
+                    <th> Players </th>
+                    <th> Turn </th>
+                    <th> Options </th>
+                    <th class="gutter"></th>
+                </tr>
+
+
+        </table>
+        <div class="inside">
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <td> 1 </td>
+                    <td> IN PROGRESS </td>
+                    <td> 4/4 </td>
+                    <td> tedbeem </td>
+                    <td><button class="btn btn-primary">view</button></td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td> RECRUITING </td>
+                    <td> 4/5 </td>
+                    <td> N/A </td>
+                    <td><button class="btn btn-primary">view</button></td>
+                </tr>
+                <tr>
+                    <td> 13 </td>
+                    <td> IN PROGRESS </td>
+                    <td> 3/3 </td>
+                    <td> D-Halt-on </td>
+                    <td><button class="btn btn-primary">view</button></td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> IN PROGRESS </td>
+                    <td> 4/4 </td>
+                    <td> tedbeem </td>
+                    <td><button class="btn btn-primary">view</button></td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td> RECRUITING </td>
+                    <td> 4/5 </td>
+                    <td> N/A </td>
+                    <td><button class="btn btn-primary">view</button></td>
+                </tr>
+                <tr>
+                    <td> 13 </td>
+                    <td> IN PROGRESS </td>
+                    <td> 3/3 </td>
+                    <td> D-Halt-on </td>
+                    <td><button class="btn btn-primary">view</button></td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> IN PROGRESS </td>
+                    <td> 4/4 </td>
+                    <td> tedbeem </td>
+                    <td><button class="btn btn-primary">view</button></td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td> RECRUITING </td>
+                    <td> 4/5 </td>
+                    <td> N/A </td>
+                    <td><button class="btn btn-primary">view</button></td>
+                </tr>
+                <tr>
+                    <td> 13 </td>
+                    <td> IN PROGRESS </td>
+                    <td> 3/3 </td>
+                    <td> D-Halt-on </td>
+                    <td><button class="btn btn-primary">view</button></td>
+                </tr>
+                <tr>
+                    <td> 1 </td>
+                    <td> IN PROGRESS </td>
+                    <td> 4/4 </td>
+                    <td> tedbeem </td>
+                    <td><button class="btn btn-primary">view</button></td>
+                </tr>
+                <tr>
+                    <td> 13 </td>
+                    <td> IN PROGRESS </td>
+                    <td> 3/3 </td>
+                    <td> D-Halt-on </td>
+                    <td><button class="btn btn-primary">view</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="boot+jq/jquery-3.3.1.js"></script>
+    <script src="boot+jq/bootstrap.min.js"></script>
+</body>
+</html>
