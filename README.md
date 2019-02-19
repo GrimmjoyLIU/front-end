@@ -1,9 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## 前端面试题目——实现表头冻结
 
 题目要求：表格内容在滚动的时候保证表头不会随着滚动。
-实现表头冻结的文件为“表头冻结.html”，采用的是css实现，也可以用js实现，
+实现表头冻结的文件为“表头冻结.html”，用纯css实现，将表格体用一个div包裹，设置滚动条和overflow属性，<br>
+同时整个表格外层也用一个div包裹并设置border—bottom，目的是使得表格在滚动时更加美观。
+
+###  由于想尝试react脚手架在上传时与普通react项目有何不同，所以将表头冻结的html文件放在脚手架创建的项目中了
+
+剩余的文件均为脚手架创建时自带文件。
 
 In the project directory, you can run:
 
