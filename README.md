@@ -1,6 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 前端面试题目——实现表头冻结
+
+题目要求：表格内容在滚动的时候保证表头不会随着滚动。
+实现表头冻结的文件为“表头冻结.html”，采用的是css实现，也可以用js实现，
 
 In the project directory, you can run:
 
